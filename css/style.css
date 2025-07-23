@@ -1,1 +1,74 @@
+ /* Estilo geral da página */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
 
+        h1 {
+            color: #0056b3;
+        }
+
+        /* Estilo da tabela */
+        table {
+            width: 80%;
+            max-width: 900px;
+            border-collapse: collapse; /* Remove o espaço entre as bordas das células */
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden; /* Garante que o box-shadow respeite o border-radius */
+        }
+
+        /* Estilo do cabeçalho da tabela */
+        th {
+            background-color: #007BFF;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: left;
+            padding: 15px;
+        }
+
+        /* Estilo das células de dados e do cabeçalho */
+        td, th {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd; /* Linha horizontal para separar as linhas */
+        }
+
+        /* Efeito de "zebra" (cores alternadas) para as linhas para melhor legibilidade */
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        /* Efeito ao passar o mouse sobre uma linha */
+        tbody tr:hover {
+            background-color: #e2eafc;
+            cursor: pointer;
+        }
+        
+        /* Estilo da última linha para não ter borda inferior */
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #007BFF;
+        }
+
+        /* Classe para o aviso de segurança */
+        .aviso-seguranca {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #fffbe6;
+            border: 1px solid #ffe58f;
+            border-radius: 5px;
+            max-width: 900px;
+            text-align: left;
+        }
+        .aviso-seguranca h2 {
+            margin-top: 0;
+            color: #d9a300;
+        }
