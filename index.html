@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Dados</title>
+    
+    <style>
+        /* Estilo geral da página */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: #0056b3;
+        }
+
+        /* Estilo da tabela */
+        table {
+            width: 80%;
+            max-width: 900px;
+            border-collapse: collapse; /* Remove o espaço entre as bordas das células */
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden; /* Garante que o box-shadow respeite o border-radius */
+        }
+
+        /* Estilo do cabeçalho da tabela */
+        th {
+            background-color: #007BFF;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: left;
+            padding: 15px;
+        }
+
+        /* Estilo das células de dados e do cabeçalho */
+        td, th {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd; /* Linha horizontal para separar as linhas */
+        }
+
+        /* Efeito de "zebra" (cores alternadas) para as linhas para melhor legibilidade */
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        /* Efeito ao passar o mouse sobre uma linha */
+        tbody tr:hover {
+            background-color: #e2eafc;
+            cursor: pointer;
+        }
+        
+        /* Estilo da última linha para não ter borda inferior */
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #007BFF;
+        }
+
+        /* Classe para o aviso de segurança */
+        .aviso-seguranca {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #fffbe6;
+            border: 1px solid #ffe58f;
+            border-radius: 5px;
+            max-width: 900px;
+            text-align: left;
+        }
+        .aviso-seguranca h2 {
+            margin-top: 0;
+            color: #d9a300;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Principais senhas do Rodoviário</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+				<th>Tipo</th>
+                <th>Endereço</th>
+                <th>Senha</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>SENHA PADRÃO</td>
+				<td>TEAM VIEWER</td>
+                <td>X XXX XXX XXX</td>
+                <td>ipagtv01@</td>
+            </tr>
+            <tr>
+                <td>Maria Oliveira</td>
+                <td>Avenida Brasil, 456 - Rio de Janeiro, RJ</td>
+                <td>outrasenha</td>
+            </tr>
+            
+            </tbody>
+    </table>
+	
+	<h1>Principais Empresas</h1>
+	<a href='http://adm.glarustec.com.br:8280/ventaboletosadm/index.zul'>Acessar TotalBus ADM LINK</a> Login: JRBORTOLIM Senha: 75236
+	
+	    <table>
+        <thead>
+            <tr>
+                <th>Interação TEF</th>
+				<th>Empresa</th>
+                <th>Código da Empresa</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sitef</td>
+				<td>EMPRESA PRINCESA DO NORTE S.A.</td>
+                <td>66</td>
+            </tr>
+			<tr>
+                <td>Sitef</td>
+				<td>VIACAO PIRACICABANA SA</td>
+                <td>8</td>
+            </tr>
+			<tr>
+                <td>Sitef</td>
+				<td>EXPRESSO MARINGA LTDA</td>
+                <td>25</td>
+            </tr>
+			<tr>
+                <td>Sitef</td>
+				<td>EMPRESA DE ONIBUS NOSSA SENHORA DA PENHA</td>
+                <td>23</td>
+            </tr>
+			<tr>
+                <td>Sitef</td>
+				<td>ITAMARATI</td>
+                <td>4014</td>
+            </tr>
+            
+            </tbody>
+    </table>
+
+    <div class="aviso-seguranca">
+        <h2>⚠️ Aviso de Segurança Importante</h2>
+        <p>
+            Este arquivo HTML é excelente para fins de aprendizado e organização visual de dados que <strong>NÃO SÃO SENSÍVEIS</strong>.
+        </p>
+        <p>
+            <strong>NUNCA armazene senhas reais ou informações confidenciais em um arquivo HTML como este.</strong> Qualquer pessoa que tiver acesso a este arquivo poderá ver todas as senhas em texto simples. Para aplicações reais, as senhas devem ser armazenadas em um banco de dados seguro e de forma criptografada (usando "hashing").
+        </p>
+    </div>
+
+</body>
+</html>
